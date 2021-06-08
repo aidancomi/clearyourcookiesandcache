@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <script>
+// Opera 8.0+
+var isOpera = (!!window.opr && !!opr.addons) || !!window.opera || navigator.userAgent.indexOf(' OPR/') >= 0;
+
+// Firefox 1.0+
+var isFirefox = typeof InstallTrigger !== 'undefined';
+
+// Safari 3.0+ "[object HTMLElementConstructor]" 
+var isSafari = /constructor/i.test(window.HTMLElement) || (function (p) { return p.toString() === "[object SafariRemoteNotification]"; })(!window['safari'] || (typeof safari !== 'undefined' && safari.pushNotification));
+
+// Internet Explorer 6-11
+var isIE = /*@cc_on!@*/false || !!document.documentMode;
+
+// Edge 20+
+var isEdge = !isIE && !!window.StyleMedia;
+
+// Chrome 1 - 71
+var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+
+if (isChrome = true)
+{
+document.write('<meta http-equiv="refresh" content="0; URL=https://support.google.com/accounts/answer/32050"/>')
+}
+else if (isFirefox = true)
+{
+document.write('<meta http-equiv="refresh" content="0; URL=https://support.mozilla.org/en-US/kb/clear-cookies-and-site-data-firefox" />')
+}
+else if (isSafari = true)
+{
+document.write('<meta http-equiv="refresh" content="0; URL=https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471" />')
+}
+else if (isOpera = true)
+{
+document.write('<meta http-equiv="refresh" content="0; URL=https://www.opera.com/case-studies/clean-browser-and-remove-trackers" />')
+}
+else if (isEdge = true)
+{
+document.write('<meta http-equiv="refresh" content="0; URL=https://support.microsoft.com/en-us/microsoft-edge/delete-cookies-in-microsoft-edge-63947406-40ac-c3b8-57b9-2a946a29ae09" />')
+}
+else
+{
+
+}
+
+</script>
