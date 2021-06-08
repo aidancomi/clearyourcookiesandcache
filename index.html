@@ -19,6 +19,12 @@ var isEdge = !isIE && !!window.StyleMedia;
 
 // Chrome 1 - 71
 var isChrome = !!window.chrome && (!!window.chrome.webstore || !!window.chrome.runtime);
+  
+if (window.navigator.userAgent.indexOf('Edg/') > -1)
+{
+isEdge = true;
+isChrome = false;
+}
 
 if (isChrome)
 {
