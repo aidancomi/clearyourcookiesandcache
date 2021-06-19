@@ -1,5 +1,8 @@
-<!DOCTYPE html>
 <html>
+<center>
+<img src="https://clearyourcookiesandcache.com/loading.gif" alt="Loading" style="width:30px;height:30px;">   <br>  
+Detecting your browser, please stand by
+</center>
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
  <script>
 // Opera 8.0+
@@ -46,7 +49,11 @@ isEdge = true;
 isChrome = false;
 }
 
-if (isChrome)
+if(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent))
+{
+  document.write('Sorry! This site does not currently work on mobile!');
+}
+else if (isChrome)
 {
 document.write('<meta http-equiv="refresh" content="0; URL=https://support.google.com/accounts/answer/32050"/>')
 }
